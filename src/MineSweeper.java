@@ -617,7 +617,6 @@ public class MineSweeper extends JFrame {
      * - 如果点击到安全区域，揭示该单元格并检查是否达成胜利条件
      * </p>
      *  @param row 点击的行索引
-     * @param row 点击的行索引
      * @param col 点击的列索引
     */
     private void leftClick(int row, int col) {
@@ -894,6 +893,7 @@ public class MineSweeper extends JFrame {
     }
 
     public static void main(String[] args) {
+        System.setProperty("java.awt.headless", "true");
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (ClassNotFoundException | UnsupportedLookAndFeelException | IllegalAccessException |
